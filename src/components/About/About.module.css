@@ -1,0 +1,32 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    height: 50vw;
+    color: #161853;
+}
+
+.aboutContainer>img{
+    width: 50vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutContainer>div{
+    width: 50vw;
+}
+
+.aboutContainer>div>h1{
+    font-size: 4vw;
+    font-weight: 400;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.aboutContainer>div>p{
+    font-size: 2vw;
+    width: 80%;
+    line-height: 1.88;
+    letter-spacing: -0.24px;
+    margin-left: 5vw;
+    margin-top: 1vh;
+}

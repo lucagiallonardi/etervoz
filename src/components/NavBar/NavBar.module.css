@@ -1,0 +1,135 @@
+.navBarContainer{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    background: #161853;
+    overflow-y: hidden;
+    animation: aparece .2s ease-in-out forwards;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.navBarContainerNone{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    background: #161853;
+    overflow-y: hidden;
+    animation: desvanece .2s ease-in-out forwards;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+}
+@keyframes desvanece {
+    0%{
+        opacity: 1;
+    }    
+    100%{
+        opacity: 0;
+    }
+}
+
+.logoAll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logoAll>span{
+    color: #fff;
+    font-size: 1.2vw;
+}
+.logoAll>span>i{
+    font-style: normal;
+    font-size: 1.5vw;
+}
+.logoImg{
+    width: 5vw;
+    margin: 3vw 1vw 3vw 3vw;
+    
+}
+
+.navBarList{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    overflow-y: hidden;
+}
+
+.navBarItem{
+    margin: 0 .8vw 0;
+    font-size: 3vh;
+    transition: all .2s;
+    transform-origin: center;
+}
+.navBarItem:hover{
+    cursor: pointer;
+    text-shadow: 0px 3px 5px rgb(2, 2, 2);
+    transform: scale(1.1);
+}
+.navBarItem>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.navBarItem:nth-child(7)>a{
+    margin-left: 5vw;
+}
+
+.navBarItem:last-child>a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+.arrowUp{
+    width: 7.5vh;
+    height: 7.5vh;
+    background: #161853;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 90%;
+    right: 3%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowUpNone{
+    display: none;
+}
+
+.arrowUpIcon:hover{
+    cursor: pointer;
+    rotate: 360deg;
+}
+
+.arrowUpIcon{
+    width: 5vh;
+    height: 5vh;
+    color: #fff;
+    transition: all 1s;
+}
