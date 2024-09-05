@@ -1,0 +1,29 @@
+.wsp{
+  width: 9vh;
+  height: 9vh;
+  background: #161853;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 88%;
+  left: 3%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp{
+  width: 6vh;
+  height: 6vh;
+  color: #fff;
+  transition: all 1s;
+}
+
+.wsp:hover{
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+  transform: scale(1.05);
+  opacity: .8;
+  background: rgb(54,251,80);
+    background: radial-gradient(circle, rgba(54,251,80,1) 0%, rgba(25,150,48,1) 86%);
+}

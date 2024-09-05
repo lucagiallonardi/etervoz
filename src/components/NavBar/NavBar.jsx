@@ -40,12 +40,12 @@ const NavBar = () => {
        <div className={scrollUp ? styles.navBarContainer : styles.navBarContainerNone}>
         <div><a href='/' className={styles.logoAll}><img className={styles.logoImg} src={logo} alt='logo'/><span><i>Etervoz</i><br/>Una voz para cada emoción</span></a></div>
         <ul className={styles.navBarList}>
-            <li className={styles.navBarItem}><a href='#quienes-somos'>Home</a></li>
-            <li className={styles.navBarItem}><a href='#servicios'>Acerca de</a></li>
-            <li className={styles.navBarItem}><a href='#galeria'>Servicios</a></li>
-            <li className={styles.navBarItem}><a href='#clientes'>Nuestras voces</a></li>
-            <li className={styles.navBarItem}><a href='#socios'>Edición de audio</a></li>
-            <li className={styles.navBarItem}><a href='#contacto'>Contacto</a></li>
+            <li className={styles.navBarItem}><a href='#'>Home</a></li>
+            <li className={styles.navBarItem}><a href='#about'>Acerca de</a></li>
+            <li className={styles.navBarItem}><a href='#services'>Servicios</a></li>
+            <li className={styles.navBarItem}><a href='#voices'>Nuestras voces</a></li>
+            <li className={styles.navBarItem}><a href='#edit'>Edición de audio</a></li>
+            <li className={styles.navBarItem}><a href='#contact'>Contacto</a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconBrandWhatsapp/></a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconPhone/></a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconMail/></a></li>

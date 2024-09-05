@@ -1,20 +1,25 @@
 .audioBooksContainer{
     width: 100vw;
-    height: 50vw;
+    margin-bottom: 10vh;
 }
 
 .audioBooksContainer>h1{
     font-weight: 500;
     font-size: 3vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
     color: #161853;
     text-align: center;   
+    margin-bottom: 10vh;
 }
 
 .audioBooksGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 3vh;
+    margin-left: 2.5vw;
     }
+
+.audioBooksGrid>img{
+    width: 30vw;
+}

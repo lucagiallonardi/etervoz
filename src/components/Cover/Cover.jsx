@@ -4,7 +4,7 @@ import  style from "./Cover.module.css";
 
 const Cover = () => {
   return (
-    <div className={style.cover}>
+    <div className={style.cover} id='home'>
         <img src={imgCover}/>
     </div>
   )

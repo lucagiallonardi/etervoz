@@ -3,7 +3,7 @@ import React from 'react'
 import style from "./OurServices.module.css";
 const OurServices = () => {
   return (
-    <div className={style.servicesContainer}>
+    <div className={style.servicesContainer} id='services'>
     <h1>Nuestros servicios</h1>
     <div className={style.divGrid}>
         <div><h1>Locución</h1><p>Realizamos servicios de locución integral entre los que se pueden ubicar audiolibros, comerciales, cursos en línea, institucionales, doblaje y un sin fin de proyectos en los que se requiera el uso de voz profesional.</p></div>

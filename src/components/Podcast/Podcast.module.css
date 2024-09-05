@@ -1,0 +1,29 @@
+.podcastContainer{
+    width: 100vw;
+    height: 30vw;
+    background-image: url(https://ss-static-001.esmsv.com/r/content/host1/74c027bc33fba240b354a67ac34baf97/editor/UNA%20VOZ%20%C3%9ANICA%20%283%29.webp) !important; 
+    background-color: rgb(18, 23, 134) !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.podcastContainer>img{
+    width: 50vw;
+    height: 28.5vw;
+}
+
+.podcastContainer>div{
+    color: #fff;
+    width: 40%;
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+
+.podcastContainer>div>p{
+    font-size: 1.7vw;
+}
+
+.podcastContainer>div>h1{
+    font-size: 4.5vw;
+    margin-top: 4vw;
+}

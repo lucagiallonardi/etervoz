@@ -6,16 +6,20 @@ import About from '../../components/About/About';
 import OurServices from '../../components/OurServices/OurServices';
 import OurVoices from '../../components/OutVoices/OurVoices';
 import AudioBooks from '../../components/AudioBooks/AudioBooks';
+import Podcast from '../../components/Podcast/Podcast';
+import Whatsapp from '../../components/Whatsapp/Whatsapp';
 
 const Home = () => {
   return (
     <div className={style.div}>
         <NavBar/>
+        <Whatsapp/>
         <Cover/>
         <About/>
         <OurServices/>
         <OurVoices/>
         <AudioBooks/>
+        <Podcast/>
     </div>
   )
 }

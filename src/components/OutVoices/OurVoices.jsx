@@ -4,7 +4,7 @@ import style from "./OurVoices.module.css";
 
 const OurVoices = () => {
   return (
-    <div className={style.ourVoicesContainer}>
+    <div className={style.ourVoicesContainer} id='voices'>
         <h1>Conoce nuestras voces</h1>
         <div className={style.gridVoices}>
         <iframe
