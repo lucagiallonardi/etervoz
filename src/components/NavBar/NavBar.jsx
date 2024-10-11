@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './NavBar.module.css';
 import { IconArrowUp, IconBrandWhatsapp,IconPhone, IconMail, IconWorld } from '@tabler/icons-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import logo from '../../media/img/Logo maquilladora profesional tipográfico y elegante blanco y negro (4).png';
 
 const NavBar = () => {
@@ -8,6 +9,21 @@ const NavBar = () => {
     const[scrollUp, setScrollUp] = useState(true);
 
     
+    const [exit, setExit] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleClick= (link)=>{
+        if(location.pathname !== link){
+        setExit(true);
+        setTimeout(() => {
+            navigate(link);
+          }, 800);
+        }else{
+            navigate(link);
+        }
+    }
+
     useEffect(()=>{
         const handleScroll = ()=>{
             const currentScroll = window.scrollY;
@@ -37,14 +53,19 @@ const NavBar = () => {
 
     return (
         <div>
+
+<div className={`${exit === true ? 'transiition-exit' : ''} `}></div>
+            <div className={`${exit === true ? 'transiition2-exit' : ''} `}></div>
+            <div className={`${exit === true ? 'transiition3-exit' : ''} `}></div>
+
        <div className={scrollUp ? styles.navBarContainer : styles.navBarContainerNone}>
         <div><a href='/' className={styles.logoAll}><img className={styles.logoImg} src={logo} alt='logo'/><span><i>Etervoz</i><br/>Una voz para cada emoción</span></a></div>
         <ul className={styles.navBarList}>
-            <li className={styles.navBarItem}><a href='#'>Home</a></li>
-            <li className={styles.navBarItem}><a href='#about'>Acerca de</a></li>
-            <li className={styles.navBarItem}><a href='#services'>Servicios</a></li>
-            <li className={styles.navBarItem}><a href='#voices'>Nuestras voces</a></li>
-            <li className={styles.navBarItem}><a href='#edit'>Edición de audio</a></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/")}>Home</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/about")}>About us</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Services</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/https://mpago.la/1J8cKaq")}>Voices</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/blog")}>Blog</Link></li>
             <li className={styles.navBarItem}><a href='#contact'>Contacto</a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconBrandWhatsapp/></a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconPhone/></a></li>

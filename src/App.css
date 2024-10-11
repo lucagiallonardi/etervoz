@@ -4,3 +4,131 @@
     font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
 }
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+
+.page-transition {
+    animation: transitionPagina 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 101;
+  }
+
+  .page-transition2 {
+    animation: transitionPagina2 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #35353a;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .page-transition3 {
+    animation: transitionPagina3 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #F0EDE2;
+    position: fixed;
+    z-index: 101;
+  }
+
+  @keyframes transitionPagina{
+    0%{
+        width: 60vw;
+    }
+    100%{
+        width: 0vw;
+    }
+  }
+
+  @keyframes transitionPagina2{
+    0%{
+        width: 100vw;
+    }
+    100%{
+        width: 0vw;
+    }
+  }
+
+  @keyframes transitionPagina3{
+    0%{
+        width: 15vw;
+    }
+    100%{
+        width: 0vw;
+    }
+  }
+
+  .transiition-exit{
+    animation: transitionExit 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 101;
+  }
+
+  .transiition2-exit{
+    animation: transitionExit2 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #35353a;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .transiition3-exit{
+    animation: transitionExit3 1s ease-in-out;
+    width: 0vw;
+    height: 100vh;
+    background-color: #F0EDE2;
+    position: fixed;
+    z-index: 101;
+  }
+  
+
+  @keyframes transitionExit{
+    0%{
+        width: 0vw;
+    }
+    80%{
+      width: 60vw;
+    }
+    100%{
+        width: 60vw;
+    }
+  }
+
+  @keyframes transitionExit2{
+    0%{
+        width: 0vw;
+    }
+    95%{
+      width: 120vw;
+    }
+    100%{
+        width: 120vw;
+    }
+  }
+
+  @keyframes transitionExit3{
+    0%{
+        width: 0vw;
+    }
+    80%{
+      width: 15vw;
+    }
+    100%{
+        width: 15vw;
+    }
+  }
+
+
