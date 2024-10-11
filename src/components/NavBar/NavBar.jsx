@@ -64,7 +64,7 @@ const NavBar = () => {
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/")}>Home</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/about")}>About us</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Services</Link></li>
-            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/https://mpago.la/1J8cKaq")}>Voices</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("https://mpago.la/1J8cKaq")}>Voices</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/blog")}>Blog</Link></li>
             <li className={styles.navBarItem}><a href='#contact'>Contacto</a></li>
             <li className={styles.navBarItem}><a href='#contacto'><IconBrandWhatsapp/></a></li>
