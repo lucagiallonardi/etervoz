@@ -11,15 +11,69 @@
     text-align: center;   
     margin-bottom: 10vh;
 }
+.audioCarouselDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .audioBooksGrid {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-row-gap: 3vh;
     margin-left: 2.5vw;
     }
 
-.audioBooksGrid>img{
-    width: 30vw;
+.imgCont{
+    display: flex;
+    flex-direction: column;
 }
+.imgCont>img{
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.reproductor{
+    margin-top: 2vh;
+    background-color: #77777a;
+    width: 25vw;
+    height: 5vh;
+}
+
+
+.rightarrow{
+    display: flex;
+    background-color: #77777a;
+    width: 4vw;
+    height: 4vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 2vw;
+   }
+   
+   .rightarrow:hover{
+       cursor: pointer;
+   }
+   
+   .leftarrow{
+       display: flex;
+       background-color: #77777a;
+       width: 4vw;
+       height: 4vw;
+       align-items: center;
+       justify-content: center;
+       border-radius: 50%;
+       color: #fff;
+       rotate: 180deg;
+       margin-right: 2vw;
+   }
+   
+   .leftarrow:hover{
+       cursor: pointer;
+   }

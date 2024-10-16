@@ -6,7 +6,7 @@
     align-items: center;
     position: fixed;
     z-index: 99;
-    background: #161853;
+    background: #fff;
     overflow-y: hidden;
     animation: aparece .2s ease-in-out forwards;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
@@ -32,7 +32,7 @@
     align-items: center;
     position: fixed;
     z-index: 99;
-    background: #161853;
+    background: #fff;
     overflow-y: hidden;
     animation: desvanece .2s ease-in-out forwards;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
@@ -56,18 +56,22 @@
     text-decoration: none;
 }
 
+
 .logoAll>span{
-    color: #fff;
+    color: #161853;
     font-size: 1.2vw;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 500;
 }
 .logoAll>span>i{
     font-style: normal;
     font-size: 1.5vw;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 500;
 }
 .logoImg{
     width: 5vw;
-    margin: 3vw 1vw 3vw 3vw;
-    
+    margin: 3vw 1vw 3vw 1vw;
 }
 
 .navBarList{
@@ -78,24 +82,30 @@
 }
 
 .navBarItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 .8vw 0;
     font-size: 3vh;
-    transition: all .2s;
+    transition: all .1s;
     transform-origin: center;
+    margin-left: 4.8vw;
 }
 .navBarItem:hover{
     cursor: pointer;
-    text-shadow: 0px 3px 5px rgb(2, 2, 2);
-    transform: scale(1.1);
-}
-.navBarItem>a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2vw;
+    transform: scale(1.02) perspective(0px);
+    box-shadow: 4px 4px 4px rgba(119, 119, 122, 0.33)s
 }
 
-.navBarItem:nth-child(7)>a{
-    margin-left: 5vw;
+.navBarItem:nth-child(4):hover{
+    transform: none !important;
+}
+
+.navBarItem>a{
+    text-decoration: none;
+    color: #77777a;
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 
 .navBarItem:last-child>a{
@@ -108,7 +118,7 @@
 .arrowUp{
     width: 7.5vh;
     height: 7.5vh;
-    background: #161853;
+    background: rgb(22, 24, 83);
     display: flex;
     position: fixed;
     z-index: 100;

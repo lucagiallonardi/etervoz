@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import styles from './NavBar.module.css';
-import { IconArrowUp, IconBrandWhatsapp,IconPhone, IconMail, IconWorld } from '@tabler/icons-react';
+import { IconArrowUp, IconWorld } from '@tabler/icons-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom'; 
-import logo from '../../media/img/Logo maquilladora profesional tipográfico y elegante blanco y negro (4).png';
+import logo from '../../media/img/LOGO FONDO BLANCO.png';
 
 const NavBar = () => {
     const [scroll, setScroll] = useState(0);
@@ -59,19 +59,14 @@ const NavBar = () => {
             <div className={`${exit === true ? 'transiition3-exit' : ''} `}></div>
 
        <div className={scrollUp ? styles.navBarContainer : styles.navBarContainerNone}>
-        <div><a href='/' className={styles.logoAll}><img className={styles.logoImg} src={logo} alt='logo'/><span><i>Etervoz</i><br/>Una voz para cada emoción</span></a></div>
         <ul className={styles.navBarList}>
-            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/")}>Home</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/about")}>About us</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Services</Link></li>
-            <li className={styles.navBarItem}><Link onClick={()=>handleClick("https://mpago.la/1J8cKaq")}>Voices</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Our Jobs</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/")} className={styles.logoAll}><img className={styles.logoImg} src={logo} alt='logo'/><span><i>Etervoz</i><br/>Una voz para cada emoción</span></Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/blog")}>Blog</Link></li>
-            <li className={styles.navBarItem}><a href='#contact'>Contacto</a></li>
-            <li className={styles.navBarItem}><a href='#contacto'><IconBrandWhatsapp/></a></li>
-            <li className={styles.navBarItem}><a href='#contacto'><IconPhone/></a></li>
-            <li className={styles.navBarItem}><a href='#contacto'><IconMail/></a></li>
-            <li className={styles.navBarItem}><a href='#contacto'>ES-EN<IconWorld/></a></li>
-            
+            <li className={styles.navBarItem}><a href='#contact'>Contact</a></li>
+            <li className={styles.navBarItem}><a href='#contacto'>ES-EN<IconWorld/></a></li>     
         </ul>
        </div>
 

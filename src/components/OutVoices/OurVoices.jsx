@@ -1,83 +1,23 @@
 import React from 'react'
 import style from "./OurVoices.module.css";
+import img from "../../media/img/img1.png"
+import { IconPlayerPlay } from '@tabler/icons-react';
 
 
 const OurVoices = () => {
   return (
     <div className={style.ourVoicesContainer} id='voices'>
-        <h1>Conoce nuestras voces</h1>
-        <div className={style.gridVoices}>
-        <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/Ui_aNQ05wT8/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/9xCehdYEDbA/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/X58sa1_NjFc/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/OFNplZkNPJc/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/lkgH65EVnMs/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/4prbhZq2b_E?autoplay=1/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/MmzITLmn59E/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/KfKdOhSm_oo/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/mW0qD99zAOg/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/S_xMOVm8k8U/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/0YgmxToT6Gw/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>
-
-         <iframe
-    className={style.iframe}
-     src="https://www.youtube.com/embed/V9kHw3ugMhQ/maxresdefault.jpg"
-     title="Una voz para tu e-learning"
-     ></iframe>   
+        <div className={style.divVoice}><h1>Our Voices</h1>
+        <div className={style.divButton}>View more</div></div>
+        <div className={style.divVoice}>
+         <div className={style.imgArrows}>
+            <div className={style.leftarrow}><IconPlayerPlay/></div>
+                <div className={style.voiceDiv}>
+                    <img src={img}/>
+                    <div className={style.reproductor}></div>
+                </div>
+            <div className={style.rightarrow}><IconPlayerPlay/></div>
+         </div>
         </div>
     </div>
   )

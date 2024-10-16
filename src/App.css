@@ -1,14 +1,14 @@
 *{
     margin: 0;
     overflow-x: hidden;
-    font-family: "Raleway", sans-serif;
+    font-family: "Exo";
     scroll-behavior: smooth;
 }
 
 *{
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Exo', sans-serif;
 
 }
 
@@ -17,7 +17,7 @@
     animation: transitionPagina 1s ease-in-out;
     width: 0vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #F0EDE2;
     position: fixed;
     z-index: 101;
   }
@@ -26,7 +26,7 @@
     animation: transitionPagina2 1s ease-in-out;
     width: 0vw;
     height: 100vh;
-    background-color: #35353a;
+    background-color: #c4c2bb;
     position: fixed;
     z-index: 100;
   }
@@ -71,7 +71,7 @@
     animation: transitionExit 1s ease-in-out;
     width: 0vw;
     height: 100vh;
-    background-color: #000;
+    background-color: #F0EDE2;
     position: fixed;
     z-index: 101;
   }
@@ -80,7 +80,7 @@
     animation: transitionExit2 1s ease-in-out;
     width: 0vw;
     height: 100vh;
-    background-color: #35353a;
+    background-color: #c4c2bb;
     position: fixed;
     z-index: 100;
   }

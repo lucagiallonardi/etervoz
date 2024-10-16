@@ -1,6 +1,6 @@
 .podcastContainer{
     width: 100vw;
-    height: 30vw;
+    height: 38vw;
     background-image: url(https://ss-static-001.esmsv.com/r/content/host1/74c027bc33fba240b354a67ac34baf97/editor/UNA%20VOZ%20%C3%9ANICA%20%283%29.webp) !important; 
     background-color: rgb(18, 23, 134) !important;
     display: flex;
@@ -8,8 +8,9 @@
 }
 
 .podcastContainer>img{
+    margin-top: 5vh;
     width: 50vw;
-    height: 28.5vw;
+    height: 30vw;
 }
 
 .podcastContainer>div{
@@ -20,10 +21,29 @@
 }
 
 .podcastContainer>div>p{
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 
 .podcastContainer>div>h1{
-    font-size: 4.5vw;
-    margin-top: 4vw;
+    font-size: 5vw;
+    margin-top: 1vh;
+    width: 90%;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    letter-spacing: .1vw;
+    
+}
+
+.divButton{
+    background-color: transparent;
+    display: flex;
+    border-radius: 25px;
+    width: 8vw;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2vw;
+    border: solid 2px #fff;
+    margin-top: 2vh;
 }
