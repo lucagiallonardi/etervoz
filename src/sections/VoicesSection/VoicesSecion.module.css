@@ -1,0 +1,13 @@
+.voicesSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15vh;
+    }
+
+    .voicesSectionContainer>div{
+        width: 20vw;
+        height: 25vw;
+        margin-top: 3vw;
+    }

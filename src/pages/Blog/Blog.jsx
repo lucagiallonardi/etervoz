@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import NavBar from '../../components/NavBar/NavBar';
 import Podcast from '../../components/Podcast/Podcast';
+import VoicesSection from '../../sections/VoicesSection/VoicesSection';
 
 const Blog = () => {
     const [exit, setExit] = useState(false);
@@ -27,8 +28,8 @@ const Blog = () => {
         <div className={`${exit === true ? 'transiition-exit' : ''} `}></div>
         <div className={`${exit === true ? 'transiition2-exit' : ''} `}></div>
         <div className={`${exit === true ? 'transiition3-exit' : ''} `}></div>
-        <NavBar/>
-        <Podcast/>
+        {/* <NavBar/> */}
+        <VoicesSection/>
     </div>
   )
 }

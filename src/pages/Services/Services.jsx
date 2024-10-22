@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import NavBar from '../../components/NavBar/NavBar';
-import OurServices from '../../components/OurServices/OurServices';
+import AudioBookItem from '../../components/AudioBookItem/AudioBookItem';
 
 const Services = () => {
     const [exit, setExit] = useState(false);
@@ -28,7 +28,7 @@ const Services = () => {
         <div className={`${exit === true ? 'transiition2-exit' : ''} `}></div>
         <div className={`${exit === true ? 'transiition3-exit' : ''} `}></div>
         <NavBar/>
-        <OurServices/>
+        <AudioBookItem/>
     </div>
   )
 }

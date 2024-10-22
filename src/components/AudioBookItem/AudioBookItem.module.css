@@ -1,0 +1,19 @@
+.AudioItemContainer{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.AudioItemImg{
+    width: 100%;
+    height: 25vw;
+    object-fit:inherit;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.AudioItemAudio{
+    width: 100%;
+    height: 3vw;
+    margin-top: .5vw;
+}

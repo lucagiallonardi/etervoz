@@ -1,7 +1,9 @@
+
 .aboutContainer{
     display: flex;
     flex-direction: row;
     height: 50vw;
+    overflow-y:hidden;
    
 }
 
@@ -21,6 +23,8 @@
     margin-left: 5vw;
     margin-top: 5vh;
     color: #161853;
+    
+    overflow-y:hidden;
 }
 
 .aboutContainer>div>p{

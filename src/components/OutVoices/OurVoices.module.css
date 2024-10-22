@@ -1,51 +1,34 @@
 .ourVoicesContainer{
     width: 100vw;
-    height: 93vh;
+    height: 80vh;
     margin-top: 7vh;
     display: flex;
     flex-direction: row;
 }
 
 .divVoice{
-    display: flex;
-    flex-direction: column;
     width: 50vw;
 }
 
 .divVoice:first-child{
     margin-left: 10vw;
     width: 35vw;
+    display: flex;
+    flex-direction: column;
 }
 .divVoice:first-child>h1{
     color: #161853;
     font-size: 9vw;
     font-family: "Days One", sans-serif;
     font-weight: 400;
+    
+    overflow-y:hidden;
 }
 
 .divVoice:last-child{
     margin-right: 5vw;
 }
 
-.imgArrows{
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
-}
-
-.voiceDiv>img{
- width: 25vw;
- height: 25vw;
- object-fit: cover;
-}
-
-.reproductor{
-    width: 25vw;
-    height: 7vh;
-    margin-top: 2vh;
-    background-color: #77777a;
-}
 
 
 .divButton{
@@ -61,35 +44,27 @@
     margin-top: 5vh;
 }
 
-.rightarrow{
- display: flex;
- background-color: #77777a;
- width: 4vw;
- height: 4vw;
- align-items: center;
- justify-content: center;
- border-radius: 50%;
- color: #fff;
- margin-left: 2vw;
+.carouselContainer{
+    width: 40vw;
+    margin-left: 7vw;
+}
+.carouselContainer>div>div{
+    margin-top: -10vw;
+    margin-left:5vw;
+    margin-right: 5vw;
+    width: 100%;
 }
 
-.rightarrow:hover{
-    cursor: pointer;
+.carouselContainer>div>div>div>div{
+    margin-left: 2.7vw;
 }
 
-.leftarrow{
-    display: flex;
-    background-color: #77777a;
-    width: 4vw;
-    height: 4vw;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #fff;
-    rotate: 180deg;
-    margin-right: 2vw;
+
+.carouselContainer>div>button{
+    height: 30vw;
+    margin-top: auto;
 }
 
-.leftarrow:hover{
-    cursor: pointer;
+.carouselContainer>div>button>span{
+    filter: invert(1);
 }

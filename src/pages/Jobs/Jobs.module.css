@@ -1,0 +1,65 @@
+
+
+.solapasContainer{
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    padding-top: 13vh;
+    border-radius: 0;
+    background-color: #181a53;
+}
+
+
+.solapasContainer>button{
+    height: 12vh;
+    color: #fff;
+    background-color: #181a53;
+    border: none;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    border-bottom: solid 2px #fff;
+}
+
+.solapasContainer>button:first-child{
+    border-top: solid 2px #fff;
+}
+
+.solapaActiva{
+    background-color: #fff !important;
+    border: none !important;
+    color: #181a53 !important;   
+}
+
+.solapa{
+    width: 70vw;
+    margin-left: 30vw;
+    overflow: scroll !important;
+    animation: visible ease-in-out .5s forwards;
+}
+
+.invisible{
+    width: 70vw;
+    margin-left: 30vw;
+    animation: invisible ease-in-out .5s forwards;
+}
+
+@keyframes invisible {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes visible {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -62,7 +62,7 @@ const NavBar = () => {
         <ul className={styles.navBarList}>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/about")}>About us</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Services</Link></li>
-            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/services")}>Our Jobs</Link></li>
+            <li className={styles.navBarItem}><Link onClick={()=>handleClick("/jobs")}>Our Jobs</Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/")} className={styles.logoAll}><img className={styles.logoImg} src={logo} alt='logo'/><span><i>Etervoz</i><br/>Una voz para cada emoción</span></Link></li>
             <li className={styles.navBarItem}><Link onClick={()=>handleClick("/blog")}>Blog</Link></li>
             <li className={styles.navBarItem}><a href='#contact'>Contact</a></li>

@@ -38,6 +38,7 @@
     font-weight: 500;
     color: #161853;
     text-align: center;
+    overflow-y:hidden;
 }
 .divGrid>div>p{
     line-height: 1.88;

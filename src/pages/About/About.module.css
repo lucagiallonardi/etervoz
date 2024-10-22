@@ -1,0 +1,164 @@
+.aboutCover{
+    padding-top: 7.5vw;
+    width: 100vw;
+    height: 40vw;
+    background: rgb(176,177,191);
+    background: linear-gradient(90deg, rgba(176,177,191,1) 0%, rgba(255,255,255,1) 44%);
+display: flex;
+flex-direction: row;
+}
+.aboutCover>h1{
+    font-family: "Days One", sans-serif;
+    font-size: 5vw;
+    width: 50vw;
+    margin-top: 5vw;
+    color: #181a53;
+}
+
+.aboutCover>p{
+    font-family: "Days One", sans-serif;
+    font-size: 2vw;
+    text-align: end;
+    width: 40vw;
+    margin-top: 12.5vw;
+    color: #77777a;
+}
+
+.imagenesCover{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: -10vw;
+}
+
+.imagenesCover>img{
+    width: 25vw;
+    height: 12.5vw;
+    object-fit: cover;
+    margin-top: 2.5vw;
+}
+
+.imagenesCover>img:nth-child(2){
+    margin-top: 0;
+    width: 35vw;
+    height: 17.5vw;
+}
+
+
+.tipsAbout{
+    background-color: #000;
+    width: 100vw;
+    height: 60vw;
+    display: flex;
+    flex-direction: row;
+    color: #77777a;
+}
+
+.tipsAbout>div>div{
+    margin-top: 5vw;
+}
+
+.tipsAbout>div>div>h1{
+    font-size: 2.5vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+        
+}
+.tipsAbout>div>div>h1:hover{
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0px 2px 3px rgba(30, 30, 31, 0.6);
+}
+
+.tipsAbout>div>div>p{
+    width: 70%;
+}
+
+.tipLeft{
+    margin-top: 10vw;
+    margin-left: 5vw;
+    width: 40vw;
+    z-index: 2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.tipRight{
+    margin-top: 10vw;
+    margin-left: 15vw;
+    width: 35vw;
+    z-index: 2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.tipRight>div>h1{
+    text-align: end;
+}
+
+.tipRight>div>p{
+    margin-left: 10vw;
+    text-align: end;
+}
+
+.tipVisible{
+    width: 35vw;
+    display: flex;
+    color: #fff;
+    animation: visible ease-in .5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@keyframes visible {
+    0%{
+        height: 0;
+    } 
+    100%{
+        height: 10vw;
+    }   
+}
+
+.tipInvisible{
+    width: 35vw;
+    animation: invisible ease-in .5s forwards;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@keyframes invisible {
+    0%{
+        height: 10vw;
+    }
+    100%{
+        height: 0;
+    }
+
+}
+
+.tipsAbout>img{
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    height: 50vw;
+    z-index: 1;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
+.aboutVideo{
+    width: 30vw;
+    height: 40vw;
+    object-fit: cover;
+    background-color: #000;
+}
+
+.videoDiv{
+    display: flex;
+    flex-direction: row;
+}
+.videoDiv>img{
+    width: 70vw;
+}
